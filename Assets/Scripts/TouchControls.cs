@@ -108,6 +108,24 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SecondaryContact"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""669b2ebb-2ce9-484f-9801-16db526ad960"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SecondaryPos"",
+                    ""type"": ""Value"",
+                    ""id"": ""9592e855-934b-4070-8ee8-df608eed376b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -132,6 +150,28 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
                     ""action"": ""PrimaryPos"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9efb7e9f-06ae-4a44-8020-4fd856edb596"",
+                    ""path"": ""<Touchscreen>/touch1/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";TouchScreen"",
+                    ""action"": ""SecondaryPos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""60e83da4-c41e-4e64-8a40-872f6a38bf5d"",
+                    ""path"": ""<Touchscreen>/touch1/press"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": "";TouchScreen"",
+                    ""action"": ""SecondaryContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -154,6 +194,8 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
         m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
         m_Touch_PrimaryContact = m_Touch.FindAction("PrimaryContact", throwIfNotFound: true);
         m_Touch_PrimaryPos = m_Touch.FindAction("PrimaryPos", throwIfNotFound: true);
+        m_Touch_SecondaryContact = m_Touch.FindAction("SecondaryContact", throwIfNotFound: true);
+        m_Touch_SecondaryPos = m_Touch.FindAction("SecondaryPos", throwIfNotFound: true);
     }
 
     ~@TouchControls()
@@ -236,6 +278,8 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
     private List<ITouchActions> m_TouchActionsCallbackInterfaces = new List<ITouchActions>();
     private readonly InputAction m_Touch_PrimaryContact;
     private readonly InputAction m_Touch_PrimaryPos;
+    private readonly InputAction m_Touch_SecondaryContact;
+    private readonly InputAction m_Touch_SecondaryPos;
     /// <summary>
     /// Provides access to input actions defined in input action map "Touch".
     /// </summary>
@@ -255,6 +299,14 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Touch/PrimaryPos".
         /// </summary>
         public InputAction @PrimaryPos => m_Wrapper.m_Touch_PrimaryPos;
+        /// <summary>
+        /// Provides access to the underlying input action "Touch/SecondaryContact".
+        /// </summary>
+        public InputAction @SecondaryContact => m_Wrapper.m_Touch_SecondaryContact;
+        /// <summary>
+        /// Provides access to the underlying input action "Touch/SecondaryPos".
+        /// </summary>
+        public InputAction @SecondaryPos => m_Wrapper.m_Touch_SecondaryPos;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -287,6 +339,12 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
             @PrimaryPos.started += instance.OnPrimaryPos;
             @PrimaryPos.performed += instance.OnPrimaryPos;
             @PrimaryPos.canceled += instance.OnPrimaryPos;
+            @SecondaryContact.started += instance.OnSecondaryContact;
+            @SecondaryContact.performed += instance.OnSecondaryContact;
+            @SecondaryContact.canceled += instance.OnSecondaryContact;
+            @SecondaryPos.started += instance.OnSecondaryPos;
+            @SecondaryPos.performed += instance.OnSecondaryPos;
+            @SecondaryPos.canceled += instance.OnSecondaryPos;
         }
 
         /// <summary>
@@ -304,6 +362,12 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
             @PrimaryPos.started -= instance.OnPrimaryPos;
             @PrimaryPos.performed -= instance.OnPrimaryPos;
             @PrimaryPos.canceled -= instance.OnPrimaryPos;
+            @SecondaryContact.started -= instance.OnSecondaryContact;
+            @SecondaryContact.performed -= instance.OnSecondaryContact;
+            @SecondaryContact.canceled -= instance.OnSecondaryContact;
+            @SecondaryPos.started -= instance.OnSecondaryPos;
+            @SecondaryPos.performed -= instance.OnSecondaryPos;
+            @SecondaryPos.canceled -= instance.OnSecondaryPos;
         }
 
         /// <summary>
@@ -371,5 +435,19 @@ public partial class @TouchControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPrimaryPos(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SecondaryContact" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSecondaryContact(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SecondaryPos" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSecondaryPos(InputAction.CallbackContext context);
     }
 }

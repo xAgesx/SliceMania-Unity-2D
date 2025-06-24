@@ -62,4 +62,3 @@ public Vector2 primaryPosition() {
     
     
 }
-
