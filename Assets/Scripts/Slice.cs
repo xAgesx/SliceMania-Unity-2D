@@ -10,10 +10,11 @@ public class Slice : MonoBehaviour {
     private List<GameObject> candyPrefabs;
     private InputManager inputManager;
     public SwipeDetection swipeDetection;
+    public int HP = 3;
 
     public void Awake() {
         inputManager = FindAnyObjectByType<InputManager>().GetComponent<InputManager>();
-        
+
     }
     public List<GameObject> getCandyPrefabs() {
         return candyPrefabs;
@@ -36,7 +37,7 @@ public class Slice : MonoBehaviour {
 
                     var spawnedItem = Instantiate(candyPrefabs[index - 1], pos, Quaternion.Euler(0, 0, 0));
                     spawnedItem.GetComponent<Rigidbody2D>().AddTorque(60);
-                    spawnedItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(xOffset, 150));
+                    spawnedItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(xOffset, 250));
                     Debug.Log(xOffset);
                     xOffset *= -1;
                 }
