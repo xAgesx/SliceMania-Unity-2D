@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: JawBreaker
+  points: 10
 --- !u!60 &3968773460527581286
 PolygonCollider2D:
   m_ObjectHideFlags: 0

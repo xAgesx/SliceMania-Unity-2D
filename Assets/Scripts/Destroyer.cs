@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class Destroyer : MonoBehaviour {
 
     int HP;
     public Slice sliceScript;
+    
 
     void Awake() {
         HP = sliceScript.HP;
@@ -11,6 +13,8 @@ public class Destroyer : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D collision) {
         HP -= 1;
+        
+
         Destroy(collision.gameObject);
 
     }

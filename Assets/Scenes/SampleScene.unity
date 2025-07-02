@@ -761,7 +761,7 @@ Transform:
   m_GameObject: {fileID: 1397660209}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.89227235, y: -0.5129709, z: -2.2321355}
+  m_LocalPosition: {x: -0.01, y: -4.3, z: -2.2321355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -818,9 +818,12 @@ MonoBehaviour:
   candyPrefabs:
   - {fileID: 7173087694839093042, guid: 7fd136fe820a12346a43a2afe5135023, type: 3}
   - {fileID: 9103289315306097484, guid: 51628f07c518b714eb7169e9c48d9c48, type: 3}
-  - {fileID: 355266379028428381, guid: 657fa43a163a53e4badd566ab2afedd1, type: 3}
+  - {fileID: 5152073894082682748, guid: e60f5ab1e054c624b926322ef3a529e1, type: 3}
+  - {fileID: 7053614491298653870, guid: 6c56f323bee89644ab7ef1aaa3b2d8d3, type: 3}
   swipeDetection: {fileID: 2081290866}
+  scoreText: {fileID: 1924306034}
   HP: 3
+  score: 0
 --- !u!1 &1404588663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1275,7 @@ GameObject:
   - component: {fileID: 1924306035}
   - component: {fileID: 1924306034}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1317,7 +1320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1344,8 +1347,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1535,7 +1538,8 @@ MonoBehaviour:
   candyPrefabs:
   - {fileID: 7173087694839093042, guid: 7fd136fe820a12346a43a2afe5135023, type: 3}
   - {fileID: 9103289315306097484, guid: 51628f07c518b714eb7169e9c48d9c48, type: 3}
-  - {fileID: 355266379028428381, guid: 657fa43a163a53e4badd566ab2afedd1, type: 3}
+  - {fileID: 5152073894082682748, guid: e60f5ab1e054c624b926322ef3a529e1, type: 3}
+  - {fileID: 7053614491298653870, guid: 6c56f323bee89644ab7ef1aaa3b2d8d3, type: 3}
 --- !u!114 &2081290867
 MonoBehaviour:
   m_ObjectHideFlags: 0
