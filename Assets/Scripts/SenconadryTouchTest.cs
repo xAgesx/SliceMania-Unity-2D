@@ -12,7 +12,7 @@ public class SenconadryTouchTest : MonoBehaviour {
         input.Touch.Enable();
 
     }
-    void Oisable() {
+    void OnDisable() {
         input.Touch.Disable();
     }
 
