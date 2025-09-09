@@ -41,7 +41,7 @@ public class Controls : MonoBehaviour{
     private void TrySlice(Vector2 screenPos){
         
             
-                Debug.Log("Slice !");
+                //Debug.Log("Slice !");
             
         
     }

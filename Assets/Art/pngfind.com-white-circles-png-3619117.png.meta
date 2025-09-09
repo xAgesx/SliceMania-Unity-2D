@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dfb5e070c63260844a0c816ead5fd66d
+guid: b7a38d5a4649e604f88577303be6bc8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5421457759977132532
-    second: Candybackground_0
+      213: 3338187511792584208
+    second: pngfind.com-white-circles-png-3619117_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Candybackground_0
+      name: pngfind.com-white-circles-png-3619117_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 443
-        height: 296
+        width: 1100
+        height: 1099
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0e27c334ec13c4b0800000000000000
-      internalID: -5421457759977132532
+      spriteID: 016ca020bdf935e20800000000000000
+      internalID: 3338187511792584208
       vertices: []
       indices: 
       edges: []

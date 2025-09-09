@@ -16,8 +16,6 @@ public class Slice : MonoBehaviour {
     public TextMeshProUGUI scoreText;
     [SerializeField] private ParticleSystem sliceAnimation;
     [SerializeField] private AudioSource sliceSound;
-            
-    public int HP = 3;
     public int score = 0;
 
     public void Awake() {
@@ -62,7 +60,7 @@ public class Slice : MonoBehaviour {
                     var spawnedItem = Instantiate(candyPrefabs[index - 1], pos, Quaternion.Euler(0, 0, 0));
                     spawnedItem.GetComponent<Rigidbody2D>().AddTorque(60);
                     spawnedItem.GetComponent<Rigidbody2D>().AddForce(new Vector2(xOffset, 250));
-                    Debug.Log(xOffset);
+                    //Debug.Log(xOffset);
                     xOffset *= -1;
                 }
 

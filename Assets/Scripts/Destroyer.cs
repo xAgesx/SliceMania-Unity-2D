@@ -3,25 +3,11 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour {
 
-    int HP;
-    public Slice sliceScript;
-    
-
-    void Awake() {
-        HP = sliceScript.HP;
-
-    }
+    public GameManager gm;
     void OnCollisionEnter2D(Collision2D collision) {
-        HP -= 1;
-        
-
+        gm.HP -= 1;
         Destroy(collision.gameObject);
 
-    }
-    void Update() {
-        if (HP <= 0) {
-            Debug.Log("Game OVER");
-        }        
     }
 
 }
