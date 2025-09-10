@@ -17,6 +17,7 @@ public class Slice : MonoBehaviour {
     [SerializeField] private ParticleSystem sliceAnimation;
     [SerializeField] private AudioSource sliceSound;
     public int score = 0;
+    public GameManager gm;
 
     public void Awake() {
         inputManager = FindAnyObjectByType<InputManager>().GetComponent<InputManager>();
@@ -44,7 +45,7 @@ public class Slice : MonoBehaviour {
 
             //update score
             score += other.gameObject.GetComponent<Item>().points;
-                scoreText.text = score.ToString();
+                scoreText.text = gm.Abbreviate(score);
 
             //For every other item , spawn the next smaller children with a small offset up and to the sides
             if (other.gameObject.GetComponent<Item>().itemType != "Lollipop") {

@@ -8,7 +8,7 @@ PhysicsMaterial2D:
   m_PrefabAsset: {fileID: 0}
   m_Name: Bouncy
   serializedVersion: 2
-  friction: 500
+  friction: 0
   bounciness: 0.2
   m_FrictionCombine: 0
   m_BounceCombine: 0
