@@ -16,11 +16,14 @@ public class Slice : MonoBehaviour {
     public TextMeshProUGUI scoreText;
     [SerializeField] private ParticleSystem sliceAnimation;
     [SerializeField] private AudioSource sliceSound;
-    public int score = 0;
+    public int score ;
     public GameManager gm;
 
     public void Awake() {
         inputManager = FindAnyObjectByType<InputManager>().GetComponent<InputManager>();
+        score = PlayerPrefs.GetInt("Score", 0);
+        scoreText.text = gm.Abbreviate(score);
+        
 
     }
     public List<GameObject> getCandyPrefabs() {

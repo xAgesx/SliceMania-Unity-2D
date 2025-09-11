@@ -10,9 +10,12 @@ public class ItemSpawner : MonoBehaviour {
 
     void Start() {
         candies = sliceScript.getCandyPrefabs();
-        InvokeRepeating("spawnItem", 0, 2);
+        startSpawning();
     }
 
+    public void startSpawning() {
+        InvokeRepeating("spawnItem", 0, 2);
+    }
     void spawnItem() {
         //Debug.Log(candies.Count);
         GameObject itemToSpawn = candies[Random.Range(0, candies.Count)];

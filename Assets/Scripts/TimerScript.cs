@@ -26,8 +26,9 @@ public class TimerScript : MonoBehaviour {
     }
     public void startCountdown() {
         StartCoroutine(coroutine);
+        
     }
-    void stopCountdown() {
+    public void stopCountdown() {
         StopCoroutine(coroutine);
         
     }
@@ -44,6 +45,8 @@ public class TimerScript : MonoBehaviour {
             yield return null;
         }
         timerTxt.text = "0";
+        PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.Save();
         stopCountdown();
         
     }

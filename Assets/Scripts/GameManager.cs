@@ -40,26 +40,31 @@ public class GameManager : MonoBehaviour {
             HpIcons[i].sprite = EmptyHpIcon;
         }
         if (HP <= 0) {
-
+            //Save the score before timeScale is set to 0 to avoid any conflicts
+            PlayerPrefs.SetInt("Score",score);
+            PlayerPrefs.Save();
             continueTransitionMenu();
+            HP = 0;
+            
         }
         if (timerScript.timerFloat <= 0) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            resetScene();
         }
 
 
     }
+    public void resetScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     void continueTransitionMenu() {
 
         //First Remove all The candies 
-        GameObject[] allItems = GameObject.FindGameObjectsWithTag("Item");
-        foreach (GameObject item in allItems) {
-            DestroyImmediate(item);
-        }
+        destroyAllItems();
 
         //Stop the spawning script
-        GetComponent<ItemSpawner>().enabled = false;
+        
         GetComponent<ItemSpawner>().CancelInvoke();
+        GetComponent<ItemSpawner>().enabled = false;
 
         //then display the menu
         displayContinue();
@@ -71,6 +76,12 @@ public class GameManager : MonoBehaviour {
         timerScript.enabled = true;
 
 
+    }
+    public void destroyAllItems() {
+        GameObject[] allItems = GameObject.FindGameObjectsWithTag("Item");
+        foreach (GameObject item in allItems) {
+            DestroyImmediate(item);
+        }
     }
 
     int getScore() {
