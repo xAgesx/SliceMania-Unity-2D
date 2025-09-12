@@ -294,7 +294,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ee95c1ed95a67ef4da468b4fb9d9a6ec, type: 3}
   m_Resource: {fileID: 8300000, guid: ee95c1ed95a67ef4da468b4fb9d9a6ec, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -415,8 +415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3627796, y: -263.7029}
-  m_SizeDelta: {x: 171.1731, y: 41.8269}
+  m_AnchoredPosition: {x: 7.3627796, y: -280}
+  m_SizeDelta: {x: 207.45, y: 52.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119835562
 MonoBehaviour:
@@ -461,19 +461,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 119835563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2081290874}
-        m_TargetAssemblyTypeName: RewardedAdsButton, Assembly-CSharp
-        m_MethodName: LoadAd
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &119835563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a35cb4ee76fb7084dbeb55e8d85ed13e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2aaa16ba391b1fd488b58067575b4c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1204,7 +1192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &613311663
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1540,7 +1528,7 @@ MonoBehaviour:
   m_text: Keep Playing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1570,7 +1558,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2288,7 +2276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1184830836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4123,7 +4111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: dfb5e070c63260844a0c816ead5fd66d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4260,6 +4248,7 @@ MonoBehaviour:
   - {fileID: 1638638859}
   - {fileID: 1057418305}
   EmptyHpIcon: {fileID: 0}
+  deaths: 0
 --- !u!114 &2081290872
 MonoBehaviour:
   m_ObjectHideFlags: 0

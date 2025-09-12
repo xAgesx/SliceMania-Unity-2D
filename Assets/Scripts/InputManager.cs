@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 [DefaultExecutionOrder(-1)]
@@ -43,7 +44,12 @@ public class InputManager : MonoBehaviour {
 private void EndPrimaryTouch(InputAction.CallbackContext context) {
     Vector2 screenPos = touchControls.Touch.PrimaryPos.ReadValue<Vector2>();
     if (OnEndTouch != null && IsValidScreenPosition(screenPos)) {
-        OnEndTouch(Utils.screenToWorld(mainCamera, screenPos), (float)context.time);
+            try {
+                OnEndTouch(Utils.screenToWorld(mainCamera, screenPos), (float)context.time);
+            } catch (Exception e) {
+                Debug.Log(e.Message);
+                }
+        
     }
 }
 

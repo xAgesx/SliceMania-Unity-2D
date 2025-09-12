@@ -1,5 +1,4 @@
-using Microsoft.Unity.VisualStudio.Editor;
-using Unity.VisualScripting;
+
 using UnityEngine;
 
 public class RGB : MonoBehaviour {
