@@ -9,7 +9,7 @@ This project highlights my expertise in Unity 6, mobile-first game development, 
 ## Quick Start
 
 ### Play Now
-1. **Browser**: Head to [itch.io](https://your-itch-io-link-here.itch.io/slice-mania) and play directly in a mobile browser (touch devices recommended).
+1. **Browser**: Head to [itch.io](https://xAgesx.itch.io/slice-mania) and play directly in a mobile browser (touch devices recommended).
 2. **Mobile**: Download the APK for Android or IPA for iOS (coming soon) from releases, or build from source.
 
 ### Controls
@@ -55,7 +55,7 @@ In *Slice Mania*, candies spawn from the top of the screen, and your mission is 
 ![Gameplay GIF](assets/images/gameplay-loop.gif)  
 *A quick loop of spawning, slicing, and splitting action.*  
 
-Experience it live at [itch.io](https://your-itch-io-link-here.itch.io/slice-mania)!
+Experience it live at [itch.io](https://xAgesx.itch.io/slice-mania)!
 
 ## Features
 
@@ -89,16 +89,6 @@ As a Unity developer, I’m passionate about creating fun, scalable games. This 
 
 Contributions are not currently accepted, as I’m focusing on maintaining full control over the project’s direction. However, feedback is welcome—reach out via the contact details below!
 
-## License
 
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-I’m a Unity developer eager to create impactful mobile experiences. Let’s talk about opportunities or feedback:
-- **GitHub**: [your-username](https://github.com/your-username)
-- **LinkedIn**: [your-linkedin-profile](https://linkedin.com/in/your-profile)
-- **Email**: your.email@example.com
-- **Portfolio**: [your-portfolio-site.com](https://your-portfolio-site.com)
 
 Dive into *Slice Mania* and slice your way to glory! 🍬
