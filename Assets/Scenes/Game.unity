@@ -461,7 +461,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 119835563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081290872}
+        m_TargetAssemblyTypeName: GoogleMobileAdsDemoScript, Assembly-CSharp
+        m_MethodName: ShowAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &119835563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,7 +2323,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 720, y: 1280}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4152,8 +4164,6 @@ GameObject:
   - component: {fileID: 2081290870}
   - component: {fileID: 2081290871}
   - component: {fileID: 2081290872}
-  - component: {fileID: 2081290873}
-  - component: {fileID: 2081290874}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4258,45 +4268,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081290865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f58d53de03547f14ba2dda94db073097, type: 3}
+  m_Script: {fileID: 11500000, guid: 601e1624ddf1dbc44b74905c7422d1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 5943198
-  _iOSGameId: 5943199
-  _testMode: 1
-  rewardedAdScript: {fileID: 2081290874}
---- !u!114 &2081290873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081290865}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b1eb5b53b817884390cdfa16385a49b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _androidAdUnitId: Interstitial_Android
-  _iOSAdUnitId: Interstitial_iOS
---- !u!114 &2081290874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081290865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21f915545ed64a74d94f0629ff5e1d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showAdButton: {fileID: 119835562}
-  _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
-  timerCanvas: {fileID: 1184830838}
-  itemSpawerScript: {fileID: 2081290870}
-  sliceScript: {fileID: 1397660213}
 --- !u!1001 &396440543718069943
 PrefabInstance:
   m_ObjectHideFlags: 0
