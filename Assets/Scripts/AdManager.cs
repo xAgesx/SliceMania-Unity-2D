@@ -46,7 +46,7 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour {
     }
     else
     {
-        Debug.LogError("Interstitial ad is not ready yet.");
+        Debug.Log("Interstitial ad is not ready yet.");
     }
 }
 

@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour {
         pauseMenu.transform.GetChild(1).transform.GetChild(1).transform.GetChild(0).gameObject.SetActive((AudioListener.volume == 0) ? true : false);
 
         
-        
     }
 
     // Update is called once per frame
