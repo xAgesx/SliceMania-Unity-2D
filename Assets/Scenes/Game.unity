@@ -462,9 +462,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2081290872}
-        m_TargetAssemblyTypeName: GoogleMobileAdsDemoScript, Assembly-CSharp
-        m_MethodName: ShowAd
+      - m_Target: {fileID: 2081290873}
+        m_TargetAssemblyTypeName: RewardedAdExample, Assembly-CSharp
+        m_MethodName: ShowRewardedAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4163,7 +4163,7 @@ GameObject:
   - component: {fileID: 2081290866}
   - component: {fileID: 2081290870}
   - component: {fileID: 2081290871}
-  - component: {fileID: 2081290872}
+  - component: {fileID: 2081290873}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4259,7 +4259,7 @@ MonoBehaviour:
   - {fileID: 1057418305}
   EmptyHpIcon: {fileID: 0}
   deaths: 0
---- !u!114 &2081290872
+--- !u!114 &2081290873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4268,9 +4268,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081290865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601e1624ddf1dbc44b74905c7422d1ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f4950e3fb604d248adf639e90882053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 2081290871}
+  rewardBtn: {fileID: 119835562}
 --- !u!1001 &396440543718069943
 PrefabInstance:
   m_ObjectHideFlags: 0
