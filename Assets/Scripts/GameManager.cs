@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
         //last minute fix so forgive the unclean code x)
         pauseMenu.transform.GetChild(1).transform.GetChild(1).transform.GetChild(0).gameObject.SetActive((AudioListener.volume == 0) ? true : false);
 
-        
+
     }
 
     // Update is called once per frame
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.Save();
         }
 
-        for (int i = 2; i >= HP ; i--) {
+        for (int i = 2; i >= HP; i--) {
             HpIcons[i].sprite = EmptyHpIcon;
         }
         if (HP <= 0) {
@@ -57,8 +57,8 @@ public class GameManager : MonoBehaviour {
             //this is the number of timer the player already died , if it's 0 he can watch an ad otherwise he can't (2 consecutive deaths)
             PlayerPrefs.SetInt("Deaths", deaths);
             PlayerPrefs.Save();
-            
-            
+
+
         }
         if (timerScript.timerFloat <= 0) {
             resetScene();
@@ -85,8 +85,8 @@ public class GameManager : MonoBehaviour {
         displayContinue();
         //disable the Pause btn menu to avoid conflict between the 2 menus
         pauseBtn.gameObject.SetActive(false);
-        
-        
+
+
     }
     void displayContinue() {
         timer.gameObject.SetActive(true);
@@ -126,19 +126,17 @@ public class GameManager : MonoBehaviour {
         AudioListener.volume = (AudioListener.volume == 0) ? 1 : 0;
         PlayerPrefs.SetFloat("Volume", AudioListener.volume);
         PlayerPrefs.Save();
-        
+
         //Toggle sound indicator
         pauseMenu.transform.GetChild(1).transform.GetChild(1).transform.GetChild(0).gameObject.SetActive((AudioListener.volume == 0) ? true : false);
     }
-    public string Abbreviate(float number)
-    {
+    public string Abbreviate(float number) {
         // Define the suffixes for different magnitudes.
         string[] suffixes = { "", "k", "m", "b", "t" };
         int magnitude = 0;
         float abbreviatedNumber = number;
 
-        while (abbreviatedNumber >= 1000 && magnitude < suffixes.Length - 1)
-        {
+        while (abbreviatedNumber >= 1000 && magnitude < suffixes.Length - 1) {
             magnitude++;
             abbreviatedNumber /= 1000;
         }
@@ -146,5 +144,8 @@ public class GameManager : MonoBehaviour {
         string formattedNumber = abbreviatedNumber.ToString("0.#");
 
         return $"{formattedNumber}{suffixes[magnitude]}";
+    }
+    public int getPrefDeaths() {
+        return PlayerPrefs.GetInt("Deaths", 0);
     }
 }
