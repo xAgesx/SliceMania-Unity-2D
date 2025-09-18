@@ -9,7 +9,6 @@ Library: D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\arm
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Coding\Projects\Unity\Slice mania\Temp\Burst
---debug=Full
 --key-folder=D:/Unity/6000.0.47f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\Coding\Projects\Unity\Slice mania\Library\Burst
 --output=D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
@@ -36,7 +35,6 @@ Library: D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\arm
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Coding\Projects\Unity\Slice mania\Temp\Burst
---debug=Full
 --key-folder=D:/Unity/6000.0.47f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\Coding\Projects\Unity\Slice mania\Library\Burst
 --output=D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
@@ -54,7 +52,6 @@ Library: D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\arm
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Coding\Projects\Unity\Slice mania\Temp\Burst
---debug=Full
 --key-folder=D:/Unity/6000.0.47f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\Coding\Projects\Unity\Slice mania\Library\Burst
 --output=D:\Coding\Projects\Unity\Slice mania\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
