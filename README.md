@@ -1,6 +1,6 @@
 # Slice Mania
 
-![Slice Mania Banner](<img src="Assets/images/SliceMania-ThumbNail.jpg" width="200" height="auto" alt="Slice Mania Banner">)
+![Slice Mania Banner](<img src="Assets/images/SliceMania-ThumbNail.png" width="300" height="auto" alt="Slice Mania Banner">)
 
 **Slice Mania** is an exhilarating, endless mobile game built with Unity 6, inspired by *Fruit Ninja*. Slice through a cascade of falling candies with swift swipes, earning points as each candy splits into two smaller ones, intensifying the challenge! Miss a candy and let it hit the bottom, and you’ll lose one of your three lives—lose all, and it’s game over. Optimized for Android, with WebGL support for browser play on touch devices, this game combines addictive gameplay with ad monetization. Play it now on [itch.io](https://xAgesx.itch.io/SliceMania) or download it directly from the `Release` section!
 
